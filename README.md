@@ -3,9 +3,6 @@ Trina is Artsy
 A portfolio website built from Jekyll. Based on [photorama](https://sunbliss.github.io/photorama/ "Photorama Demo"), heavily modified. 
 
 
-## Why not github pages?
-
-We could have gotten away with github pages except for with all the images we needed a way to thumbnail them. There was just no way to do it there, and we didn't want to rely on some goofy CDN solution or the like. Besides, pagination, tags, categories are now within our grasp.
 
 ## Local Development
 
@@ -25,7 +22,6 @@ $ jekyll serve --watch
 
 One of our goals is to give Trina an online ecommerce presence, so we're using Paypal's hosted cart to bring in those basic features. We might adopt their checkout.js and implement this a little more cleanly, but the virtue of the paypal buttons is they are basically just the embedables. Prices are determiend in markdown front matter, images in art/ that do not have a related markdown file in _art/ will not be purchasble (but could be with a default price, @todo ?). A user sees a product they link in the gallery with a markdown (blue girl, for example), click 'Learn More', sees an add to cart button. 
 
-Would like to have a mini-cart, a 'full cart' icon that isn't just setting a cookie when someone clicks a link, etc. 
 
 ### Note about the thumbnail gem
 
